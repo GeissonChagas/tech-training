@@ -1,6 +1,13 @@
 @import url(../css/header.css);
+@import url(../css/tabela.css);
+@import url(../css/reset.css);
+
 
 :root{
     --branco: #FFFFFF;
+    background-color: #303030;
+    color: var(--branco);
+    font-family: 'Inter';
+    
     
 }

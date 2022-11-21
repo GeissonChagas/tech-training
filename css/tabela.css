@@ -1,4 +1,21 @@
-body{
-    color: #FFFFFF;
+.tabela{
+    border-color: #FFFFFF solid;
+    margin: 4em auto;   
+    padding: 2em;
+    border: solid 2px;
 }
+
+.atleta{
+    padding: 2em;
+}
+
+.info-nome, .info-peso, .info-altura, .info-gordura, .info-imc, .info-objetivo, .info-tempo{
+
+    border: solid 2px;
+    padding: 1em;
+    text-align: center;
+
+
+}
+
 
