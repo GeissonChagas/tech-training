@@ -1,11 +1,14 @@
 @import url(../css/header.css);
 @import url(../css/tabela.css);
 @import url(../css/reset.css);
+@import url(../css/form.css);
 
 
 :root{
     --branco: #FFFFFF;
     background-color: #303030;
+    --verde: #006400;
+    --verde-claro: #008000;
     color: var(--branco);
     font-family: 'Inter';
     

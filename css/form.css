@@ -1,0 +1,61 @@
+.container-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.titulo-form{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 auto;;
+
+}
+
+.form-adiciona{
+
+    margin: 0 auto;
+    padding: 2em 0;
+    width: 60%;
+
+}
+
+
+
+.label{
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+
+
+}
+
+.campo{
+    width: 100%;
+    text-align: center;
+    margin: 0.75em auto;
+    padding: 0.4em 0;
+    border-radius: 10px;
+    border:none;
+}
+
+.botao{
+    background-color: var(--verde);
+    color: var(--branco);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 1em auto;
+    border:none;
+    border-radius: 8px;
+    height: 30px;
+    width: 150px;
+    
+}
+
+.botao:hover{
+    background-color: var(--verde-claro);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 1em auto;
+
+}
