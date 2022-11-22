@@ -39,23 +39,28 @@
     border:none;
 }
 
-.botao{
-    background-color: var(--verde);
+.botao_bto-principal{
+    background-color: #a9a9a999 ;
     color: var(--branco);
     font-size: 18px;
     font-weight: 400;
     margin: 1em auto;
     border:none;
     border-radius: 8px;
-    height: 30px;
-    width: 150px;
+    height: 35px;
+    width: 140px;
     
 }
 
-.botao:hover{
-    background-color: var(--verde-claro);
+.botao_bto-principal:hover{
+    background-color: #a9a9a9;
+    color: var(--branco);
     font-size: 18px;
     font-weight: 600;
     margin: 1em auto;
+    border:none;
+    border-radius: 8px;
+    height: 35px;
+    width: 140px;
 
 }

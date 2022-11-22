@@ -29,7 +29,7 @@
 
 <main>
     <table class="tabela">
-        <div class="tabela__div">
+        <thead class="tabela_head">
             <tr class="atleta">
                 <td class="info-nome">Nome:</td>
                 <td class="info-peso">Peso:</td>
@@ -38,10 +38,9 @@
                 <td class="info-tempo">Tempo de treino:</td>
                 <td class="info-gordura">Gordura (%):</td>
                 <td class="info-imc">Classificação imc:</td>
-                
             </tr>
-        </div>
-        <div class="tabela__div">
+        </thead>
+        <tbody id="tabela_body">
             <tr class="atleta">
                 <td class="info-nome">Paulo</td>
                 <td class="info-peso">100</td>
@@ -70,26 +69,34 @@
                 <input id="altura" name="altura" type="text" placeholder="Digite a altura do atleta" class="campo campo-medio">
             </div>
             <div class="grupo">
-                <label for="gordura" class="label">Objetivo:</label>
-                <input id="gordura" type="text" placeholder="Digite a porcentagem de gordura do atleta" class="campo campo-medio">
+                <label for="objetivo" class="label">Objetivo:</label>
+                <input id="objetivo" type="text" placeholder="Digite o objetivo atleta" class="campo campo-medio">
             </div>
             <div class="grupo">
-                <label for="gordura" class="label">Tempo de Treino:</label>
-                <input id="gordura" type="text" placeholder="Digite a porcentagem de gordura do atleta" class="campo campo-medio">
+                <label for="tempo" class="label">Tempo de Treino:</label>
+                <input id="tempo" type="text" placeholder="Digite o tempo de treino do atleta" class="campo campo-medio">
             </div>
             <div class="grupo">
                 <label for="gordura" class="label">% de Gordura:</label>
                 <input id="gordura" type="text" placeholder="Digite a porcentagem de gordura do atleta" class="campo campo-medio">
             </div>
             
-
-            <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+            <button id="adicionar-atleta" class="botao_bto-principal">Adicionar</button>
         </form>
     </section>
     </main>
 
 <script src="../tech-training/js/js.js"></script>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 
