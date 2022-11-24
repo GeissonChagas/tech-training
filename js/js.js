@@ -21,6 +21,7 @@ adicionaAtleta.addEventListener("click", function(event){
     let objetivoTd = document.createElement("td");
     let tempoTd = document.createElement("td");
     let gorduraTd = document.createElement("td");
+    
 
 
     nomeTd.textContent = nome;
@@ -29,16 +30,18 @@ adicionaAtleta.addEventListener("click", function(event){
     objetivoTd.textContent = objetivo;
     tempoTd.textContent = tempo;
     gorduraTd.textContent = gordura;
+    
 
 
     atletaTr.appendChild(nomeTd);
     atletaTr.appendChild(pesoTd);
     atletaTr.appendChild(alturaTd);
     atletaTr.appendChild(objetivoTd);
-    atletaTr.appendChild(objetivoTd);
+    atletaTr.appendChild(tempoTd);
     atletaTr.appendChild(gorduraTd);
+    
 
-    let tabela = document.querySelector("#tabela_body")
+    let tabela = document.querySelector("#atleta")
 
     tabela.appendChild(atletaTr)
 

@@ -28,11 +28,12 @@
 </body>
 
 <main>
+
     <table class="tabela">
         <thead class="tabela_head">
             <tr class="atleta">
                 <td class="info-nome">Nome:</td>
-                <td class="info-peso">Peso:</td>
+                <td class="info-peso">Peso (kg):</td>
                 <td class="info-altura">Altura (m):</td>
                 <td class="info-objetivo">Objetivo:</td>
                 <td class="info-tempo">Tempo de treino:</td>
@@ -40,14 +41,14 @@
                 <td class="info-imc">Classificação imc:</td>
             </tr>
         </thead>
-        <tbody id="tabela_body">
-            <tr class="atleta">
-                <td class="info-nome">Paulo</td>
-                <td class="info-peso">100</td>
-                <td class="info-altura">2.00</td>
-                <td class="info-objetivo">Hipertrofia</td>
-                <td class="info-tempo"> 1 ano e 1/2.</td>
-                <td class="info-gordura">10</td>
+        <tbody id="tbody">
+            <tr class="atleta" id="primeiro-atleta">
+                <td class="info-nome">Geisson</td>
+                <td class="info-peso">84</td>
+                <td class="info-altura">1.80</td>
+                <td class="info-objetivo">Performance - Crossfit</td>
+                <td class="info-tempo">2 anos</td>
+                <td class="info-gordura">8.5</td>
                 <td class="info-imc">0</td>
             </tr>
         </div>
@@ -86,7 +87,9 @@
     </section>
     </main>
 
+<script src="../tech-training/js/calculaImc.js"></script>
 <script src="../tech-training/js/js.js"></script>
+
 </html>
 
 

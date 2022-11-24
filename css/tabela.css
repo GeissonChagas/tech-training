@@ -3,8 +3,8 @@ table {
     font-family: 'Inter';
     margin: 2em auto;
     width: 90%;
-    
 }
+
 
 thead {
     background-color: #a9a9a994;
@@ -21,5 +21,11 @@ table th {
 th, td {
     border: 2px solid #FFFFFF;
     text-align: center;
-    color: var(--branco)
+    color: var(--branco);
+
 }
+
+::placeholder {
+    font-family: 'Inter';
+}
+
