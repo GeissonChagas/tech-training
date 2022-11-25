@@ -33,3 +33,12 @@ input{
     font-family: 'Inter';
 }
 
+@media screen and (max-width: 730px) {
+
+    table{
+        font-size: 12px;
+        margin: 2em auto;
+    }
+
+    
+}

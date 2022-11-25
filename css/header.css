@@ -3,14 +3,12 @@
     flex-direction: column;
 }
 
-
 .titulo__nome{
     text-align: center;
     font-size: 36px;
     font-weight: 600;
-    margin: 2em 0 0.5em 0;
-    
-    
+    margin: 2em auto;
+        
 }
 
 
@@ -19,8 +17,7 @@
     font-size: 22px;
     font-weight: 600;
     margin: 0 auto;
-    
-   
+       
 
 }
 

@@ -13,6 +13,7 @@ adicionaAtleta.addEventListener("click", function(event){
     let gordura = form.gordura.value;
 
     let atletaTr = document.createElement("tr");
+    atletaTr.setAttribute('class', 'atleta')
 
 
     let nomeTd = document.createElement("td");
