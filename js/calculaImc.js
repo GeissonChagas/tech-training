@@ -1,13 +1,16 @@
-const atleta = document.querySelector("#atleta");
+const atleta = document.querySelector('#atletas');
 
-const tdPeso = atleta.querySelector(".info-peso");
-const peso = tdPeso.textContent;
+tdPeso = atleta.querySelector(".info-peso");
+peso   = tdPeso.textContent;
 
-const tdAltura = atleta.querySelector(".info-altura");
-const altura = tdAltura.textContent;
+tdAltura = atleta.querySelector(".info-altura");
+altura   = tdAltura.textContent;
 
-const tdImc = atleta.querySelector(".info-imc");
-const imc = (peso / (altura * altura));
-tdImc.textContent = imc;
+tdImc = atleta.querySelector(".info-imc");
+imc   = peso / (altura * altura);
+tdImc.textContent = imc.toFixed(2);
+
+
+
 
 
