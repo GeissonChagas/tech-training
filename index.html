@@ -31,7 +31,7 @@
 
     <table class="tabela">
         <thead class="tabela_head">
-            <tr class="atleta">
+            <tr>
                 <td class="info-nome">Nome:</td>
                 <td class="info-peso">Peso (kg):</td>
                 <td class="info-altura">Altura (m):</td>
@@ -42,14 +42,14 @@
             </tr>
         </thead>
         <tbody id="tbody">
-            <tr class="atleta" id="atletas">
+            <tr class="atleta" >
                 <td class="info-nome">Geisson Chagas</td>
                 <td class="info-peso">84</td>
                 <td class="info-altura">1.80</td>
                 <td class="info-objetivo">Performance - crossfit</td>
                 <td class="info-tempo">2 anos</td>
                 <td class="info-gordura">8.5</td>
-                <td class="info-imc">0</td>
+                <td class="info-imc">23.93</td>
             </tr>
         </div>
 </table>
@@ -85,10 +85,70 @@
             <button id="adicionar-atleta" class="botao_bto-principal">Adicionar</button>
         </form>
     </section>
+
+
+    <table class="tabela">
+        <thead class="tabela_head">
+            <tr>
+                <td class="info-segunda">Segunda-feira:</td>
+                <td class="info-terça">terça-feira:</td>
+                <td class="info-quarta">Quarta-feira:</td>
+                <td class="info-quinta">Quinta-feira:</td>
+                <td class="info-sexta">Sexta-feira:</td>
+                <td class="info-sabado">Sabado:</td>
+            </tr>
+        </thead>
+        <tbody id="tbody2">
+            <tr class="atleta" >
+                <td class="info-segunda">Supino reto 3x6 80% PR</td>
+                <td class="info-terça">Strict pull up 4xmáx reps</td>
+                <td class="info-quarta">Back Squats 3x5 80% PR</td>
+                <td class="info-quinta">Shouder Press 3x5 80% PR</td>
+                <td class="info-sexta">Rosca Biceps 3x10 c/ carga moderada</td>
+                <td class="info-sabado">Barra paralela 3x máx reps</td>
+            </tr>
+        </div>
+</table>
+
+    <section class="container-form">
+        <h2 class="titulo-form" id="titulo-form">Adicionar treino:</h2>
+        <form class="form-adiciona2" id="form-adiciona2">
+            <div class="grupo">
+                <label for="segunda" class="label">Segunda-Feira:</label>
+                <input id="segunda" name="segunda" type="text" placeholder="Digite o treino" class="campo">
+            </div>
+            <div class="grupo">
+                <label for="terça" class="label">Terça-feira:</label>
+                <input id="terça" name="terça" type="text" placeholder="Digite o treino" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="quarta" class="label">Quarta-feira:</label>
+                <input id="quarta" name="quarta" type="text" placeholder="Digite o treino" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="quinta" class="label">Quinta-feira:</label>
+                <input id="quinta" name="quinta" type="text" placeholder="Digite o treino" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="sexta" class="label">Sexta-feira:</label>
+                <input id="sexta" name="sexta" type="text" placeholder="Digite otreino" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="sabado" class="label">Sábado:</label>
+                <input id="sabado" name="sabado" type="text" placeholder="Digite ao treino" class="campo campo-medio">
+            </div>
+            
+            <button id="adicionar-treino" class="botao_bto-principal">Adicionar</button>
+        </form>
+    </section>
+
+
+   
     </main>
 
 <script src="../tech-training/js/calculaImc.js"></script>
 <script src="../tech-training/js/adiciona-tabela.js"></script>
+<script src="../tech-training/js/adiciona-exercicio.js"></script>
 <script src="../tech-training/js/remover.js"></script>
 
 </html>

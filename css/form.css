@@ -20,6 +20,14 @@
 
 }
 
+.form-adiciona2{
+
+    margin: 0 auto;
+    padding: 2em 0;
+    width: 60%;
+
+}
+
 
 
 .label{
@@ -40,7 +48,7 @@
 }
 
 .botao_bto-principal{
-    background-color: #a9a9a999 ;
+    background-color: var(--verde);
     color: var(--branco);
     font-size: 18px;
     font-weight: 400;
@@ -53,8 +61,9 @@
 }
 
 .botao_bto-principal:hover{
-    background-color: #a9a9a9;
+    background-color: var(--verde-claro);
     color: var(--branco);
+    cursor: pointer;
     font-size: 18px;
     font-weight: 600;
     margin: 1em auto;
@@ -62,5 +71,30 @@
     border-radius: 8px;
     height: 35px;
     width: 140px;
+
+}
+
+
+.adiciona-exercicio{
+
+    background: var(--verde);
+    border-style: none;
+    border-radius: 8px;
+    color: var(--branco);
+    font-weight: 400;
+    height: 22px;
+    margin-bottom: 1.5em; 
+    width: 80px;
+
+
+}
+
+.adiciona-exercicio:hover{
+
+    background: var(--verde-claro);
+    font-weight: 600;
+    cursor: pointer;
+  
+
 
 }

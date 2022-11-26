@@ -1,4 +1,7 @@
+// Tabela de informações do atleta:
+
 const adicionaAtleta = document.querySelector("#adicionar-atleta");
+
 
 adicionaAtleta.addEventListener("click", function(event){
     event.preventDefault();
@@ -51,3 +54,4 @@ adicionaAtleta.addEventListener("click", function(event){
 
     
 })
+

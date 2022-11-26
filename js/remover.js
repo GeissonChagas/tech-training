@@ -1,7 +1,12 @@
 const atletas = document.querySelectorAll(".atleta");
+const tabela = document.querySelector('#tbody');
 
-atletas.forEach(function(atleta){
-    atleta.addEventListener("dblclick", function(){
-        this.remove();
-    })
+tabela.addEventListener("dblclick", function(event){
+    let alvo = event.target;
+    let alvoPai = alvo.parentNode;
+
+    alvoPai.remove();
+
 })
+
+
