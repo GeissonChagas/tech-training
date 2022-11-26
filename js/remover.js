@@ -9,4 +9,15 @@ tabela.addEventListener("dblclick", function(event){
 
 })
 
+const treinos = document.querySelectorAll(".treino");
+const tabela2 = document.querySelector('#tbody2');
+
+tabela2.addEventListener("dblclick", function(event){
+    let alvo = event.target;
+    let alvoPai = alvo.parentNode;
+
+    alvoPai.remove();
+
+})
+
 
