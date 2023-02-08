@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../tech-training/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
@@ -59,27 +59,27 @@
         <form class="form-adiciona" id="form-adiciona">
             <div class="grupo">
                 <label for="nome" class="label">Nome:</label>
-                <input id="nome" name="nome" type="text" placeholder="Digite o nome do atleta" class="campo">
+                <input id="nome" name="nome" type="text" placeholder="Digite o nome do atleta" class="campo" required>
             </div>
             <div class="grupo">
                 <label for="peso" class="label">Peso:</label>
-                <input id="peso" name="peso" type="text" placeholder="Digite o peso do atleta" class="campo campo-medio">
+                <input id="peso" name="peso" type="text" placeholder="Digite o peso do atleta" class="campo campo-medio" required>
             </div>
             <div class="grupo">
                 <label for="altura" class="label">Altura:</label>
-                <input id="altura" name="altura" type="text" placeholder="Digite a altura do atleta" class="campo campo-medio">
+                <input id="altura" name="altura" type="text" placeholder="Digite a altura do atleta" class="campo campo-medio" required>
             </div>
             <div class="grupo">
                 <label for="objetivo" class="label">Objetivo:</label>
-                <input id="objetivo" type="text" placeholder="Digite o objetivo atleta" class="campo campo-medio">
+                <input id="objetivo" type="text" placeholder="Digite o objetivo atleta" class="campo campo-medio" required>
             </div>
             <div class="grupo">
                 <label for="tempo" class="label">Tempo de Treino:</label>
-                <input id="tempo" type="text" placeholder="Digite o tempo de treino do atleta" class="campo campo-medio">
+                <input id="tempo" type="text" placeholder="Digite o tempo de treino do atleta" class="campo campo-medio" required>
             </div>
             <div class="grupo">
                 <label for="gordura" class="label">% de Gordura:</label>
-                <input id="gordura" type="text" placeholder="Digite a porcentagem de gordura do atleta" class="campo campo-medio">
+                <input id="gordura" type="text" placeholder="Digite a porcentagem de gordura do atleta" class="campo campo-medio" required>
             </div>
             
             <button id="adicionar-atleta" class="botao_bto-principal">Adicionar</button>
@@ -118,27 +118,27 @@
         <form class="form-adiciona2" id="form-adiciona2">
             <div class="grupo">
                 <label for="segunda" class="label">Segunda-Feira:</label>
-                <input id="segunda" name="segunda" type="text" placeholder="Digite o treino" class="campo">
+                <input id="segunda" name="segunda" type="text" placeholder="Digite o treino" class="campo" required>
             </div>
             <div class="grupo">
                 <label for="terça" class="label">Terça-feira:</label>
-                <input id="terça" name="terça" type="text" placeholder="Digite o treino" class="campo campo-medio">
+                <input id="terça" name="terça" type="text" placeholder="Digite o treino" class="campo campo-medio" required>
             </div>
             <div class="grupo">
                 <label for="quarta" class="label">Quarta-feira:</label>
-                <input id="quarta" name="quarta" type="text" placeholder="Digite o treino" class="campo campo-medio">
+                <input id="quarta" name="quarta" type="text" placeholder="Digite o treino" class="campo campo-medio" required>
             </div>
             <div class="grupo">
                 <label for="quinta" class="label">Quinta-feira:</label>
-                <input id="quinta" name="quinta" type="text" placeholder="Digite o treino" class="campo campo-medio">
+                <input id="quinta" name="quinta" type="text" placeholder="Digite o treino" class="campo campo-medio" required>
             </div>
             <div class="grupo">
                 <label for="sexta" class="label">Sexta-feira:</label>
-                <input id="sexta" name="sexta" type="text" placeholder="Digite otreino" class="campo campo-medio">
+                <input id="sexta" name="sexta" type="text" placeholder="Digite otreino" class="campo campo-medio" required>
             </div>
             <div class="grupo">
                 <label for="sabado" class="label">Sábado:</label>
-                <input id="sabado" name="sabado" type="text" placeholder="Digite ao treino" class="campo campo-medio">
+                <input id="sabado" name="sabado" type="text" placeholder="Digite ao treino" class="campo campo-medio" required>
             </div>
             
             <button id="adicionar-treino" class="botao_bto-principal">Adicionar</button>
@@ -149,10 +149,9 @@
    
     </main>
 
-<script src="../tech-training/js/calculaImc.js"></script>
-<script src="../tech-training/js/adiciona-tabela.js"></script>
-<script src="../tech-training/js/adiciona-exercicio.js"></script>
-<script src="../tech-training/js/remover.js"></script>
+<script src="./js/adiciona-tabela.js"></script>
+<script src="./js/adiciona-exercicio.js"></script>
+<script src="./js/remover.js"></script>
 
 </html>
 

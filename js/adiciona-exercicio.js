@@ -51,3 +51,5 @@ adicionaTreino.addEventListener("click", function(event){
 
     
 })
+
+

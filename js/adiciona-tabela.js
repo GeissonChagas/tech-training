@@ -1,57 +1,80 @@
-// Tabela de informações do atleta:
-
-const adicionaAtleta = document.querySelector("#adicionar-atleta");
 
 
-adicionaAtleta.addEventListener("click", function(event){
+// Função para calcular o IMC
+function calculaIMC(peso, altura) {
+    return (peso / (altura * altura)).toFixed(2);
+  }
+  
+  // Adicionando o listener ao botão de adição de atleta
+  document.getElementById("adicionar-atleta").addEventListener("click", function(event) {
+    event.preventDefault();
+  
+    // Recuperando valores do formulário
+    const nome = document.getElementById("nome").value;
+    const peso = document.getElementById("peso").value;
+    const altura = document.getElementById("altura").value;
+    const objetivo = document.getElementById("objetivo").value;
+    const tempo = document.getElementById("tempo").value;
+    const gordura = document.getElementById("gordura").value;
+  
+    // Calculando IMC
+    let imc = calculaIMC(peso, altura);
+  
+    // Criando elementos da linha da tabela
+    const tr = document.createElement("tr");
+    tr.classList.add("atleta");
+  
+    const tdNome = document.createElement("td");
+    tdNome.classList.add("info-nome");
+    tdNome.textContent = nome;
+  
+    const tdPeso = document.createElement("td");
+    tdPeso.classList.add("info-peso");
+    tdPeso.textContent = peso;
+  
+    const tdAltura = document.createElement("td");
+    tdAltura.classList.add("info-altura");
+    tdAltura.textContent = altura;
+  
+    const tdObjetivo = document.createElement("td");
+    tdObjetivo.classList.add("info-objetivo");
+    tdObjetivo.textContent = objetivo;
+  
+    const tdTempo = document.createElement("td");
+    tdTempo.classList.add("info-tempo");
+    tdTempo.textContent = tempo;
+  
+    const tdGordura = document.createElement("td");
+    tdGordura.classList.add("info-gordura");
+    tdGordura.textContent = gordura;
+  
+    const tdIMC = document.createElement("td");
+    tdIMC.classList.add("info-imc");
+    tdIMC.textContent = imc;
+  
+    // Adicionando elementos na linha da tabela
+    tr.appendChild(tdNome);
+    tr.appendChild(tdPeso);
+    tr.appendChild(tdAltura);
+    tr.appendChild(tdObjetivo);
+    tr.appendChild(tdTempo);
+    tr.appendChild(tdGordura);
+    tr.appendChild(tdIMC);
+  
+    // Adicionando linha na tabela
+    document.getElementById("tbody").appendChild(tr);
+
+  });
+
+  //apaga itens for formulário após envio: 
+
+  document.querySelector("#adicionar-atleta").addEventListener("click", function(event) {
     event.preventDefault();
 
-    let form = document.querySelector("#form-adiciona");
+    const inputs = document.querySelectorAll(".form-adiciona input");
+    inputs.forEach(function(input) {
+        input.value = "";
+    });
+});
 
-    let nome = form.nome.value;
-    let peso = form.peso.value;
-    let altura = form.altura.value;
-    let tempo = form.tempo.value;
-    let objetivo = form.objetivo.value;
-    let gordura = form.gordura.value;
-
-    let atletaTr = document.createElement("tr");
-    atletaTr.setAttribute('class', 'atleta')
-
-
-    let nomeTd = document.createElement("td");
-    let pesoTd = document.createElement("td");
-    let alturaTd = document.createElement("td");
-    let objetivoTd = document.createElement("td");
-    let tempoTd = document.createElement("td");
-    let gorduraTd = document.createElement("td");
-    let imcTd = document.createElement("td");
-    
-
-
-    nomeTd.textContent = nome;
-    pesoTd.textContent = peso;
-    alturaTd.textContent = altura;
-    objetivoTd.textContent = objetivo;
-    tempoTd.textContent = tempo;
-    gorduraTd.textContent = gordura;
-    imcTd.textContent = calculaImc(peso,altura);
-    
-
-
-    atletaTr.appendChild(nomeTd);
-    atletaTr.appendChild(pesoTd);
-    atletaTr.appendChild(alturaTd);
-    atletaTr.appendChild(objetivoTd);
-    atletaTr.appendChild(tempoTd)
-    atletaTr.appendChild(gorduraTd);
-    atletaTr.appendChild(imcTd);
-    
-
-    let tabela = document.querySelector("#tbody")
-
-    tabela.appendChild(atletaTr)
-
-    
-})
 
